@@ -26,7 +26,9 @@ export type DATA = {
   "atl_change_percentage": number,
   "atl_date": string,
   "roi": null,
-  "last_updated": string
+  "last_updated": string,
+  "favorite"?:boolean,
+  "toman"?:number
 };
 
 export const FirstValue: DATA = {

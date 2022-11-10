@@ -7,8 +7,9 @@ const theme = createTheme({
         color: 'secondary',
         sx: {
           width: 230,
-          '& .MuiInputBase-input': { cursor: 'pointer' }
+          '& .MuiInputBase-input': { cursor: 'pointer' },
         },
+        size: 'small',
         inputProps: { min: 0, style: { textAlign: 'center' } }
       },
       styleOverrides: {

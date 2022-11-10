@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import { store } from './redux/store';
 import { Provider } from 'react-redux';
+import Loading from './Loading/loading';
 
 const root = ReactDOM.createRoot(
   document.getElementById('root') as HTMLElement
@@ -12,7 +13,7 @@ const root = ReactDOM.createRoot(
 root.render(
   <>
     <Provider store={store}>
-      <App />
+      <Loading />
     </Provider>
   </>
 );
