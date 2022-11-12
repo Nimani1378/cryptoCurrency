@@ -2,11 +2,10 @@ import { Button, Stack, Typography } from '@mui/material';
 import theme from './theme/Mui-theme';
 import { ThemeProvider } from '@mui/system';
 import HomeTextFields from './components/HomeTextFields/HomeTextFields';
-import logo from './assets/images/logo.webp'
-import { useSelector, useDispatch } from 'react-redux'
+import logo from './assets/images/logo.webp';
+import { useSelector, useDispatch } from 'react-redux';
 import { useState } from 'react';
 import { DATA } from './types/types';
-
 import HomeTabel from './components/HomeTable/HomeTable';
 
 function App() {

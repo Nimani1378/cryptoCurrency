@@ -2,7 +2,7 @@ import { Stack, TextField } from "@mui/material"
 import { padding } from "@mui/system";
 import { ChangeEventHandler, SetStateAction, useState } from "react";
 import { DATA } from "../../types/types";
-import PopupShow from "../Popup/popupShowFunc"
+import PopupShow from "../popup/popupShowFunc"
 interface propbool {
     selectedValue : DATA,
     setSelectedValue : React.Dispatch<React.SetStateAction<DATA>>
