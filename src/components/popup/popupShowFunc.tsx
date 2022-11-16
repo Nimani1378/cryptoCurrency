@@ -1,8 +1,7 @@
-import { Avatar, InputAdornment, TextField, Typography } from "@mui/material";
-import { Stack } from "@mui/system";
+import { TextField } from "@mui/material";
 import React from "react";
 import { DATA } from "../../types/types";
-import Popup from "./popup";
+import Popup from './Popup';
 interface propbool {
   selectedValue : DATA,
   setSelectedValue : React.Dispatch<React.SetStateAction<DATA>>

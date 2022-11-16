@@ -1,23 +1,18 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { DATA } from '../types/types';
 
-// interface DATA{
-//     id : string,
-//     symbol : string,
-//     name : string,
-//     image : string,
-//     current_price : string,
-
-// }
+function numberWithCommas(x:number) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
 
 export const main_data = createSlice({
-    name: 'data',
+    name: 'data-retentive',
     initialState : [] ,
     reducers: {
         set_main_data: (state:DATA[] , action:PayloadAction<DATA[]>) => {
             action.payload.map((crypto:DATA)=>(
                 crypto.favorite = false,
-                crypto.toman = crypto['current_price']*37000,
+                crypto.toman =numberWithCommas(Math.round(crypto['current_price']*3700000)/100),
                 state.push(crypto)
             ))
             

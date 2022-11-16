@@ -1,5 +1,5 @@
 import { Button, Stack, Typography } from '@mui/material';
-import theme from './theme/Mui-theme';
+import theme from './theme/theme';
 import { ThemeProvider } from '@mui/system';
 import HomeTextFields from './components/HomeTextFields/HomeTextFields';
 import logo from './assets/images/logo.webp';
