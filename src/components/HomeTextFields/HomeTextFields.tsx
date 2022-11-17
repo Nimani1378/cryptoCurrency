@@ -1,7 +1,7 @@
 import { Stack, TextField } from "@mui/material"
 import { useState } from "react";
 import { DATA } from "../../types/types";
-import PopupShow from "../Popup/PopupShowFunc"
+import PopupShow from '../Popup/popupShowFunc'
 interface propbool {
     selectedValue : DATA,
     setSelectedValue : React.Dispatch<React.SetStateAction<DATA>>
@@ -10,7 +10,6 @@ interface propbool {
 const HomeTextFields = (props : propbool): JSX.Element => {
     const [count,setCount] = useState<number>(1);
     const {selectedValue,setSelectedValue} = props;
-    const [price,setPrice] = useState<number>(1)
     const handleCount = (e:React.ChangeEvent<HTMLInputElement>)=> {
          setCount(parseInt(e.target.value));
       }

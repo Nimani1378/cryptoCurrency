@@ -1,7 +1,7 @@
 import { TextField } from "@mui/material";
 import React from "react";
 import { DATA } from "../../types/types";
-import Popup from './Popup';
+import Popup from './popup'
 interface propbool {
   selectedValue : DATA,
   setSelectedValue : React.Dispatch<React.SetStateAction<DATA>>

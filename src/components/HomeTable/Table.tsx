@@ -35,10 +35,9 @@ const TableComp = () => {
                         <TableRow
                             key={row.name}
                             sx={{ '&:last-child td, &:last-child th': { border: 0 },
-                            border:'1px solid #81614e00',
-                            borderRight:0,
+                            borderBottom:'1px solid',
+                            borderColor : 'primary.light',
                             padding:'5px',
-
                         }}
                         >
                             <TableCell align="left" component="th" scope="row">
