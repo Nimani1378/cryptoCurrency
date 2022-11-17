@@ -19,7 +19,7 @@ export default function PopupShow(props: propbool) {
     setSelectedValue(value);
   };
   const handleValue= ():String =>{
-    return selectedValue['name']+' '+`(${selectedValue['symbol'].toUpperCase()})`;
+    return `${selectedValue['name']} (${selectedValue['symbol'].toUpperCase()})`;
   }
   return (
     <div>
