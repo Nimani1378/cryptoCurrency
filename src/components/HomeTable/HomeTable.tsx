@@ -1,4 +1,4 @@
-import { Stack, Box, Avatar, Typography, TableRow, Paper, Table, TableCell, TableContainer, TableHead } from "@mui/material";
+import { Stack, Box, Avatar, Typography } from "@mui/material";
 import InsertChartIcon from '@mui/icons-material/InsertChart';
 import TableComp from "./Table";
 
@@ -28,8 +28,10 @@ const HomeTabel = () => {
                             <Typography textAlign={'right'} color={'white'} variant="h6">قیمت لحظه ای</Typography>
                             <Typography textAlign={'right'} color={'white'} variant="subtitle1">در 24 ساعت گذشته</Typography>
                         </Stack>
-                        <Avatar>
-                            <InsertChartIcon color={'success'} />
+                        <Avatar sx={{
+                            backgroundColor: 'transparent'
+                        }}>
+                            <InsertChartIcon fontSize='large' color={'success'} />
                         </Avatar>
                     </Box>
                     <Stack>

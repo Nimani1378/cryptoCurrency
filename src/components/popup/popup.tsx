@@ -8,7 +8,7 @@ import { DATA } from '../../types/types';
 import { Stack } from '@mui/system';
 import { Divider, InputAdornment, TextField, Typography } from '@mui/material';
 import { SetStateAction, useState } from 'react';
-import { AccountCircle } from '@mui/icons-material';
+import SearchIcon from '@mui/icons-material/Search';
 import {numberWithCommas} from '../../globalFunctions/numberWithCommas'
 
 export interface PopupProps {
@@ -38,7 +38,8 @@ function Popup(props: PopupProps) {
       '& .MuiDialog-paper': {
         backgroundColor: 'primary.dark',
         width: '500px',
-        height: '80vh'
+        height: '80vh',
+        borderRadius:'20px'
       }
     }} onClose={handleClose} open={open}>
       <DialogTitle textAlign={'right'}>انتخاب ارز</DialogTitle>
@@ -48,12 +49,17 @@ function Popup(props: PopupProps) {
         onChange={handleSearch}
         placeholder='جستجو'
         sx={{
-          margin: '10px 40px'
+          margin: '10px 40px',
+          '& .MuiOutlinedInput-input' : {
+            textAlign:'end'
+          }
         }}
         InputProps={{
           startAdornment: (
-            <InputAdornment position="end">
-              <AccountCircle />
+            <InputAdornment position="start">
+              <SearchIcon sx={{
+                color : '#767676'
+              }} />
             </InputAdornment>
           ),
         }}

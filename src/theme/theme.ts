@@ -10,10 +10,10 @@ const theme = createTheme({
           '& .MuiInputBase-input': { cursor: 'pointer' },
         },
         size: 'small',
-        inputProps: { min: 0, style: { textAlign: 'center' } }
       },
       styleOverrides: {
         root: {
+          '& .MuiInputBase-input' : {textAlign : 'center'},
           '& .MuiOutlinedInput-root': {
             '& fieldset': {
               borderColor: '#767676',
@@ -39,19 +39,10 @@ const theme = createTheme({
         }
       }
     },
-    MuiCssBaseline : {
+    MuiTableCell:{
       styleOverrides:{
-        "@global": {
-          "*::-webkit-scrollbar": {
-            width: "5px"
-          },
-          "*::-webkit-scrollbar-track": {
-            background: "#E4EFEF"
-          },
-          "*::-webkit-scrollbar-thumb": {
-            background: "#1D388F61",
-            borderRadius: "2px"
-          }
+        root:{
+          border : '0'
         }
       }
     }
@@ -68,7 +59,13 @@ const theme = createTheme({
     text: {
       primary: '#ffffff',
       secondary: 'hsla(0,0%,100%,.7)',
-    }
+    },
+    info: {
+      main: '#ffffff',
+    },
   },
+  typography: {
+    fontFamily: 'vazirmatn',
+  }
 });
 export default theme;
