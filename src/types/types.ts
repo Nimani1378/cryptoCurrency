@@ -27,7 +27,7 @@ export type DATA = {
   "roi": null,
   "last_updated": string,
   "favorite"?:boolean,
-  "toman"?:string
+  "toman"?:number,
 };
 
 // export const FirstValue: DATA = {

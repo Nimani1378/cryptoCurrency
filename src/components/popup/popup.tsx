@@ -9,6 +9,7 @@ import { Stack } from '@mui/system';
 import { Divider, InputAdornment, TextField, Typography } from '@mui/material';
 import { SetStateAction, useState } from 'react';
 import { AccountCircle } from '@mui/icons-material';
+import {numberWithCommas} from '../../globalFunctions/numberWithCommas'
 
 export interface PopupProps {
   open: boolean;
@@ -89,7 +90,7 @@ function Popup(props: PopupProps) {
                 }}>
                   <Stack spacing={1}>
                     <Typography>تومان</Typography>
-                    <Typography>{crypto['toman']}</Typography>
+                    <Typography>{numberWithCommas(crypto['toman']??0)}</Typography>
                   </Stack>
                   <Typography>{crypto['name']}</Typography>
                 </Stack>

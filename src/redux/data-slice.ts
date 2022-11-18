@@ -1,10 +1,6 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit'
 import { DATA } from '../types/types';
 
-function numberWithCommas(x:number) {
-    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}
-
 export const main_data = createSlice({
     name: 'data-retentive',
     initialState : [] ,
@@ -12,7 +8,7 @@ export const main_data = createSlice({
         set_main_data: (state:DATA[] , action:PayloadAction<DATA[]>) => {
             action.payload.map((crypto:DATA)=>(
                 crypto.favorite = false,
-                crypto.toman =numberWithCommas(Math.round(crypto['current_price']*3700000)/100),
+                crypto.toman = Math.round(crypto['current_price']*3700000)/100 ,
                 state.push(crypto)
             ))
             
