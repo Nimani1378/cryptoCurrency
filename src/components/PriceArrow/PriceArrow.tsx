@@ -7,7 +7,7 @@ type Arrow = {
 
 const PriceArrow = ( props: Arrow ): JSX.Element => {
     const {rr1} = props;
-    if (rr1 == 'true') {
+    if (rr1 === 'true') {
         return (
             <ArrowDropUpIcon color='success'/>
         )
