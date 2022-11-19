@@ -22,15 +22,17 @@ export default function PopupShow(props: propbool) {
     return `${selectedValue['name']} (${selectedValue['symbol'].toUpperCase()})`;
   }
   return (
-    <div>
-      <TextField style={{ textAlign: 'center' }} type={'button'} color='secondary' InputProps={{
+    <>
+      <TextField style={{ textAlign: 'center' }} type={'button'} color='secondary' 
+      InputProps={{
         readOnly: true,
-      }} value={handleValue()} onClick={handleClickOpen} label='انتخاب ارز' ></TextField>
+      }}
+      value={handleValue()} onClick={handleClickOpen} label='انتخاب ارز' ></TextField>
       <Popup
         selectedValue={selectedValue}
         open={open}
         onClose={handleClose}
       />
-    </div>
+    </>
   );
 }

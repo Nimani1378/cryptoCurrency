@@ -6,7 +6,8 @@ const theme = createTheme({
       defaultProps: {
         color: 'secondary',
         sx: {
-          width: 230,
+          width : '33.3%',
+          maxWidth: 230,
           '& .MuiInputBase-input': { cursor: 'pointer' },
         },
         size: 'small',
